@@ -1,6 +1,6 @@
 async function load() {
     const model = await tf.loadLayersModel('Model_js2/model.json');
-    //alert("model loaded");
+    alert("model loaded");
     return model;
 };
 
