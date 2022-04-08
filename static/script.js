@@ -17,7 +17,6 @@ function predict() {
         let batched = tensor.sub(offset).reverse(2).expandDims()
         const res = model.predict(batched)
         document.getElementById("out_res").innerHTML = res;
-        alert(model.predict(batched));
     });
 };
 
