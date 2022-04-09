@@ -1,0 +1,84 @@
+.example-2  .btn-tertiary{
+	color:#555;
+	padding:0;
+	line-height:80px;
+	width:450px;
+	margin:auto;
+	display:block;
+	border:2px solid #555
+}
+
+.example-2 .btn-tertiary:hover,.example-2 .btn-tertiary:focus{
+	color:rgb(4, 0, 255);
+	border-color:rgb(4, 0, 255)
+}
+
+.example-2 .input-file{
+	width:.1px;
+	height:.1px;
+	opacity:0;
+	overflow:hidden;
+	position:absolute;
+	z-index:-1
+}
+
+.example-2 .input-file + .js-labelFile{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	padding:0 10px;
+	cursor:pointer
+}
+
+.example-2 .input-file + .js-labelFile .icon:before{
+	content:"\f093"
+}
+
+.upload_green {
+	color:#5cbf2a
+}
+
+.load_img {
+    border: none;
+    display: block;
+    margin: 0 auto;
+    visibility: hidden;
+}
+
+
+.center-div
+{
+	 text-align: center;
+}
+
+.bot_border {
+	border-bottom:2px solid black
+}
+
+.myButton {
+	background-color:#44c767;
+	border-radius:5px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:24px;
+	padding:15px 188px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.fs1 {
+	font-size:4rem;
+}
+
+.fs3 {
+	font-size:2rem;
+}
