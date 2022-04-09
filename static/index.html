@@ -15,14 +15,13 @@
 	<script src="script.js"></script>
 
 	<div class="container">
-		<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-		  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-			<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-			<span class="fs-2">NeuroJordan</span>
+		<header class="d-flex flex-wrap justify-content-center py-3 mb-4 bot_border">
+		  <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+			<span class="fs1">NeuroJordan</span>
 		  </a>
 	
 		  <ul class="nav nav-pills">
-			<li class="nav-item"><a href="https://github.com/Aleksandr887/NeuroJordan" class="nav-link"><img src="images/github_icon.png" height="40" width="40"></a></li>
+			<li class="nav-item"><a href="https://github.com/Aleksandr887/NeuroJordan" class="nav-link"><img src="images/github_icon.png" height="80" width="80"></a></li>
 		  </ul>
 		</header>
 	</div>
@@ -30,15 +29,15 @@
 	<div style="padding: 10px;" class="example-2">
 		<div class="form-group">
 		  <input type="file" accept="image/*" onchange="loadFile(event)" name="file" id="file" class="input-file">
-		  <label for="file" class="btn btn-tertiary js-labelFile">
-			<i class="icon fa fa-check"></i>
-			<span class="js-fileName">Загрузить файл</span>
+		  <label id="icon_load" for="file" class="btn btn-tertiary js-labelFile">
+			<i id="green_upload" class="icon fa fa-check"></i>
+			<span class="js-fileName">Upload file</span>
 		  </label>
 		</div>
 	</div>
 
 	<div style="padding: 10px;">
-		<img aling="center" class="load_img" id="output" height="250" width="250"/>
+		<img aling="center" class="load_img" id="output" height="450" width="450"/>
 	</div>
 
 	<div class="center-div">
@@ -46,7 +45,7 @@
 	</div>
 
 	<div class="center-div">
-		<output id="out_res" aling="center" name="result"></output>
+		<output class="fs3" id="out_res" aling="center" name="result"></output>
 	</div>
 
 </body>

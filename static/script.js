@@ -26,12 +26,13 @@ function predict() {
 const model = load();
 
 var loadFile = function(event) {
-var output = document.getElementById('output');
-output.src = URL.createObjectURL(event.target.files[0]);
-output.onload = function() {
-    
-URL.revokeObjectURL(output.src)
-document.getElementById("output").style.visibility = "visible";
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+        URL.revokeObjectURL(output.src)
+        document.getElementById("output").style.visibility = "visible";
+        document.getElementById("green_upload").classList.add('upload_green');
+        document.getElementById("icon_load").classList.remove('js-labelFile');
 }
 
 }

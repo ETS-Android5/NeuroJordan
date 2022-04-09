@@ -1,9 +1,42 @@
-.example-2 .btn-tertiary{color:#555;padding:0;line-height:40px;width:300px;margin:auto;display:block;border:2px solid #555}
-.example-2 .btn-tertiary:hover,.example-2 .btn-tertiary:focus{color:#888;border-color:#888}
-.example-2 .input-file{width:.1px;height:.1px;opacity:0;overflow:hidden;position:absolute;z-index:-1}
-.example-2 .input-file + .js-labelFile{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 10px;cursor:pointer}
-.example-2 .input-file + .js-labelFile .icon:before{content:"\f093"}
-.example-2 .input-file + .js-labelFile.has-file .icon:before{content:"\f00c";color:#5AAC7B}
+.example-2  .btn-tertiary{
+	color:#555;
+	padding:0;
+	line-height:80px;
+	width:450px;
+	margin:auto;
+	display:block;
+	border:2px solid #555
+}
+
+.example-2 .btn-tertiary:hover,.example-2 .btn-tertiary:focus{
+	color:rgb(4, 0, 255);
+	border-color:rgb(4, 0, 255)
+}
+
+.example-2 .input-file{
+	width:.1px;
+	height:.1px;
+	opacity:0;
+	overflow:hidden;
+	position:absolute;
+	z-index:-1
+}
+
+.example-2 .input-file + .js-labelFile{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	padding:0 10px;
+	cursor:pointer
+}
+
+.example-2 .input-file + .js-labelFile .icon:before{
+	content:"\f093"
+}
+
+.upload_green {
+	color:#5cbf2a
+}
 
 .load_img {
     border: none;
@@ -18,6 +51,10 @@
 	 text-align: center;
 }
 
+.bot_border {
+	border-bottom:2px solid black
+}
+
 .myButton {
 	background-color:#44c767;
 	border-radius:5px;
@@ -27,7 +64,7 @@
 	color:#ffffff;
 	font-family:Arial;
 	font-size:24px;
-	padding:15px 72px;
+	padding:15px 188px;
 	text-decoration:none;
 }
 .myButton:hover {
@@ -36,4 +73,12 @@
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+
+.fs1 {
+	font-size:4rem;
+}
+
+.fs3 {
+	font-size:2rem;
 }
