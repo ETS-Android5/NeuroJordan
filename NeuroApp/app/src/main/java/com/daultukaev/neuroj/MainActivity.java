@@ -24,8 +24,10 @@ import org.tensorflow.lite.DataType;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 
 import java.io.IOException;
+import java.math.RoundingMode;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
+import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -70,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void classifyImage(Bitmap image)
     {
-        result.setText("gg");
+        final DecimalFormat df = new DecimalFormat("0.00");
         try {
             Model model = Model.newInstance(getApplicationContext());
 
@@ -97,7 +99,8 @@ public class MainActivity extends AppCompatActivity {
             Model.Outputs outputs = model.process(inputFeature0);
             TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
             float[] res = outputFeature0.getFloatArray();
-            result.setText("Originality: "+res[0]);
+            df.setRoundingMode(RoundingMode.DOWN);
+            result.setText("Originality: "+df.format(res[0]));
 
             model.close();
         } catch (IOException e) {
