@@ -15,6 +15,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -31,7 +32,7 @@ import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button camera, gallery;
+    ImageButton camera, gallery;
     ImageView imageView;
     TextView result;
     int imageSize=224;
@@ -41,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        camera = findViewById(R.id.button);
-        gallery = findViewById(R.id.button2);
+        camera = findViewById(R.id.imageButton3);
+        gallery = findViewById(R.id.imageButton4);
 
         result = findViewById(R.id.classified);
         imageView = findViewById(R.id.imageView);
@@ -100,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
             TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
             float[] res = outputFeature0.getFloatArray();
             df.setRoundingMode(RoundingMode.DOWN);
-            result.setText("Originality: "+df.format(res[0]));
+            result.setText("Originality: "+(df.format(res[0]* 100))+"%");
 
             model.close();
         } catch (IOException e) {
