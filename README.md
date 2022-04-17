@@ -3,13 +3,14 @@
 
 What does this project include?
 ```
-neural network
-Web site
+
+Neural Network(Convolutional part based on MobileNet)
+Web site(https://njru.herokuapp.com/)
 mobile application (android)
 ```
 
 Why is this needed?
->This project is needed in order not to overpay for a fake or choose the most successful fake, which does not differ from the original
+>Our project helps you identify fake Air Jordan 1 High.
 
 What would we like to add to the project in the future?
 ```
